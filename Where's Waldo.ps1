@@ -35,7 +35,6 @@
                 }
             }
             Disconnect-VIServer $vCenter -Confirm:$false
+            if ($VMObjs -ne "$null") {break}
         }
-        
-    
 
